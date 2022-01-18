@@ -9,7 +9,7 @@
   font-family: 'Rubik';
   font-weight: 500;
   font-style: normal;
-  src: local("Rubik"), url("../fonts/Ribik-Medium.woff2") format("woff2"), url("../fonts/Ribik-Medium.woff") format("woff");
+  src: local("Rubik"), url("../fonts/Rubik-Medium.woff2") format("woff2"), url("../fonts/Rubik-Medium.woff") format("woff");
 }
 
 @font-face {
@@ -17,5 +17,47 @@
   font-weight: 700;
   font-style: normal;
   src: local("Rubik"), url("../fonts/Rubik-Bold.woff2") format("woff2"), url("../fonts/Rubik-Bold.woff") format("woff");
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*, *::after, *::before {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+h1, h2, h3, p, ul {
+  margin: 0;
+}
+
+body {
+  min-width: 360px;
+  overflow-x: hidden;
+  margin: 0;
+  font-family: 'Rubik', 'Arial', sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  font-style: normal;
+  color: #07275c;
+  background-color: #3d85f9;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+}
+
+.wrapper {
+  padding: 0 15px;
 }
 /*# sourceMappingURL=style.css.map */

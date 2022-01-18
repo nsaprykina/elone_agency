@@ -1,2 +1,42 @@
-@import 'fonts';
-@import 'vars';
+@import'fonts';
+@import'vars';
+
+html {
+    box-sizing: border-box;
+}
+
+*, *::after, *::before {
+    box-sizing: inherit;
+}
+
+h1, h2, h3, p, ul {
+    margin: 0;
+}
+
+body {
+    min-width: 360px;
+    overflow-x: hidden;
+    margin: 0;
+    font-family: 'Rubik', 'Arial', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    font-style: normal;
+    color: $dark-blue;
+    background-color: $blue;
+}
+
+.visually-hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+}
+
+.wrapper {
+    padding: 0 15px;
+}
