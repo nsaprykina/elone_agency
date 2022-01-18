@@ -60,4 +60,86 @@ body {
 .wrapper {
   padding: 0 15px;
 }
+
+/* Header
+==========*/
+.header {
+  padding-top: 20px;
+}
+
+/* Logo
+==========*/
+.logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.logo__image {
+  width: 25px;
+  height: 25px;
+  background-image: linear-gradient(262.95deg, #ffe600 0%, #fa940b 99.33%);
+  background-size: 25px 25px;
+  background-position: left;
+  background-repeat: no-repeat;
+  border-radius: 100%;
+}
+
+.logo__image svg {
+  width: 200px;
+  height: 26px;
+}
+
+.logo__btn-open {
+  width: 24px;
+  height: 24px;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.logo__line {
+  width: 18px;
+  height: 2px;
+  display: block;
+  background-image: linear-gradient(262.95deg, #ffe600 0%, #fa940b 99.33%);
+  position: relative;
+}
+
+.logo__line::before,
+.logo__line::after {
+  content: '';
+  display: block;
+  width: 18px;
+  height: 2px;
+  background-image: linear-gradient(262.95deg, #ffe600 0%, #fa940b 99.33%);
+  position: absolute;
+}
+
+.logo__line::before {
+  top: -6px;
+  right: -2px;
+}
+
+.logo__line::after {
+  bottom: -6px;
+  right: -2px;
+}
 /*# sourceMappingURL=style.css.map */

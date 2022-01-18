@@ -40,3 +40,77 @@ body {
 .wrapper {
     padding: 0 15px;
 }
+
+
+/* Header
+==========*/
+
+.header {
+    padding-top: 20px;
+}
+
+
+/* Logo
+==========*/
+
+.logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo__image {
+    width: 25px;
+    height: 25px;
+    background-image: linear-gradient(262.95deg, $yellow 0%, $orange-yellow 99.33%);    
+    background-size: 25px 25px;
+    background-position: left;
+    background-repeat: no-repeat;
+    border-radius: 100%;
+}
+
+.logo__image svg {
+    width: 200px;
+    height: 26px;
+}
+
+.logo__btn-open {
+    width: 24px;
+    height: 24px;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo__line {
+    width: 18px;
+    height: 2px;
+    display: block;
+    background-image: linear-gradient(262.95deg, $yellow 0%, $orange-yellow 99.33%);
+    position: relative;
+}
+
+.logo__line::before,
+.logo__line::after {
+    content: '';
+    display: block;
+    width: 18px;
+    height: 2px;
+    background-image: linear-gradient(262.95deg, $yellow 0%, $orange-yellow 99.33%);
+    position: absolute;
+}
+
+.logo__line::before {
+    top: -6px;
+    right: -2px;
+}
+
+.logo__line::after {
+    bottom: -6px;
+    right: -2px;
+}
