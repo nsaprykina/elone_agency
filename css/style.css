@@ -75,7 +75,7 @@ body {
   left: 0;
   background-color: #3d85f9;
   text-align: center;
-  display: none;
+  padding-top: 102px;
 }
 
 /* Logo
@@ -153,5 +153,29 @@ body {
 .logo__line::after {
   bottom: -6px;
   right: -2px;
+}
+
+/* Nav
+==========*/
+.nav {
+  text-align: center;
+}
+
+.nav__list {
+  display: inline-block;
+  text-align: left;
+  padding-left: 32px;
+  list-style-image: url(../images/circle.png);
+}
+
+.nav__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 24px;
+}
+
+.nav__link {
+  text-decoration: none;
 }
 /*# sourceMappingURL=style.css.map */
